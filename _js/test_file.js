@@ -1,0 +1,1 @@
+var window = window.open(url, windowName, [windowFeatures]);

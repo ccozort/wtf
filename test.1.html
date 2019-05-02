@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+<body>
+<div class = "bootstrap class">
+    <span class="someclass">stuff inside</span>
+</div>
+<p onclick="openRequestedPopup()">Testing testing....</p>
+</body>
+<script>
+var windowObjectReference;
+
+function openRequestedPopup() {
+  windowObjectReference = window.open(
+    "https://www.bcp.org/",
+    "DescriptiveWindowName",
+    "resizable,scrollbars,status"
+  );
+}
+</script>
+
+</html>

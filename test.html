@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+<body>
+<div class = "bootstrap class">
+    <span class="someclass">stuff inside</span>
+</div>
+<p id="p2">Testing testing....</p>
+</body>
+<script>
+var timerThen = Math.floor(Date.now() / 1000);
+function timerUp(x,y) {
+	timerNow = Math.floor(Date.now() / 1000);
+	currentTimer = timerNow - timerThen;
+	if (currentTimer <= y && typeof (currentTimer + x) != "undefined") {
+		return currentTimer;
+	}
+	else {
+		timerThen = timerNow;
+		return x;
+	}
+}
+while (true) {
+        document.getElementById("p2").style.color = (timerUp(55,255), timerUp(0,255), timerUp(0,255));
+}
+</script>
+
+</html>
